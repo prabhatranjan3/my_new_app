@@ -4,6 +4,7 @@ Multiprocessing Application
 
 
 Overview 
+
 This Python application demonstrates the use of multiprocessing to perform various tasks concurrently, including: 
 Downloading files from URLs. 
 Processing JSON data by filtering based on specific conditions. 
@@ -11,6 +12,7 @@ Generating CSV reports from structured data.
 The program is menu-driven and includes realistic functionality for file management and task execution. Outputs are organized into an output directory. 
  
 Features 
+
 1. File Downloading 
 The application downloads files from user-provided URLs using the requests library. 
 Each download task runs in a separate process, enabling concurrent downloads. 
@@ -82,8 +84,6 @@ bash
 python multiprocessing_application.py 
 
 
-
-
 Step 2: Choose a Task 
 The menu provides the following options: 
 ===== Multiprocessing Application Menu ===== 
@@ -100,9 +100,11 @@ Option 1 (File Downloading):
 Enter URLs (comma-separated). Example: 
 bash 
 https://example.com/file1.txt, https://example.com/file2.txt 
+
 Option 2 (JSON Processing): 
 Enter the names of existing JSON files in the output directory.Example: 
 sample.json 
+
 Option 3 (CSV Report Generation): 
 Enter structured data in JSON format. Example: 
 css 
@@ -130,6 +132,7 @@ Option 4: Exit
 Exits the application. 
  
 Error Handling 
+
 Invalid URLs: Displays a detailed error message if a file cannot be downloaded. 
 Missing Files: Displays an error if a specified JSON file is not found. 
 Malformed Data: Handles exceptions for invalid JSON inputs while processing or generating reports. 
@@ -167,10 +170,6 @@ output/
 ├── processed_sample.json 
 
 
-
-
-
-
 3. CSV Report Generation 
 Input: 
 arduino 
@@ -188,11 +187,13 @@ output/
 
 
  
-Future Enhancements 
+Future Enhancements
+
 Support for additional file formats (e.g., XML, Excel). 
 Progress bars for download and processing tasks. 
 Logging system to track errors and task progress. 
 Integration with cloud storage for remote uploads/downloads. 
  
-Conclusion 
+Conclusion
+
 This application demonstrates how multiprocessing can be used to enhance the performance of common tasks like file downloading, data processing, and report generation. The modular design, error handling, and realistic outputs make it a practical and extensible tool for real-world applications. 
